@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<button id="call-vapi">Call Vapi</button>
+
+		<script type="module">
+			import { Vapi } from "/bundle/vapiwebwidget.bundle.js"
+			const vapi = new Vapi("cb0ee6e8-c773-42f4-ba8b-39d00adc3fbf")
+			document.getElementById("call-vapi").addEventListener("click", function () {
+				vapi.start("771f9368-a22d-447c-b83e-7050751e144b")
+			})
+		</script>
+	</body>
+</html>
